@@ -1,0 +1,26 @@
+{
+  "name": "practice-sql",
+  "version": "1.0.0",
+  "description": "this is sql practice project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saiyam-26/Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/saiyam-26/Practice/issues"
+  },
+  "homepage": "https://github.com/saiyam-26/Practice#readme",
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
