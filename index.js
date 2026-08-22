@@ -8,10 +8,15 @@ let connection = mysql.createConnection({
     database: "delta_app",
 });
 
+let q = "SHOW TABLES";
+
 try {
-    connection.query("SHOW TABLES", (error, result) => {
+    connection.query(q, (error, result) => {
         if (error) throw (error);
         console.log(result);
+        console.log(result.length);
+        console.log(result[0]);
+        console.log(result[1]);
 
     })
 } catch (error) {
