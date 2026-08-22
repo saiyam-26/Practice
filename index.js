@@ -8,15 +8,17 @@ let connection = mysql.createConnection({
     database: "delta_app",
 });
 
-let q = "SHOW TABLES";
+let q = "INSERT INTO user (id, username, email, password) VALUES ?";
+let users = [
+    ["123b", "123_newuserb", "abc@gmail.comb", "abcb"],
+    ["123c", "123_newuserc", "abc@gmail.comc", "abcc"]
+];
 
 try {
-    connection.query(q, (error, result) => {
+    connection.query(q, [users], (error, result) => {
         if (error) throw (error);
         console.log(result);
-        console.log(result.length);
-        console.log(result[0]);
-        console.log(result[1]);
+        
 
     })
 } catch (error) {
